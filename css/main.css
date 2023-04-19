@@ -1,0 +1,73 @@
+@import "rose-pine-palette.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+  background-color: var(--rp-dawn-base);
+  font-family: 'Comfortaa', cursive;
+}
+
+.container {
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.user {
+  margin: 0.25rem;
+  background-color: var(--rp-dawn-overlay);
+  border-radius: 1rem;
+}
+
+.user-data {
+  padding: 1rem;
+}
+
+.tasks {
+  background-color: var(--rp-dawn-surface);
+  border-radius: 1rem;
+}
+
+.task {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.task:hover {
+  background: var(--rp-dawn-highlight-low);
+}
+
+.tasks-data {
+  padding: 1rem;
+}
+
+.button-mark-done {
+  float: right;
+  margin-left: 1rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 0.75rem;
+  background-color: var(--rp-dawn-surface);
+  border: 0.05rem solid var(--rp-dawn-text);
+  border-radius: 10%;
+  padding: 0.25rem;
+}
+
+.button-mark-done:hover {
+  color: var(--rp-dawn-foam);
+  border: 0.05rem solid var(--rp-dawn-foam);
+
+}
+
+.tasks-status {
+  text-align: center;
+}
+
+@media (min-width: 100px) and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+}
